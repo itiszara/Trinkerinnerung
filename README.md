@@ -1,6 +1,6 @@
 Trink-Erinnerung mit Python
 
-Dieses Skript zeigt regelmäßig eine Benachrichtigung an, um dich ans Trinken zu erinnern. Es funktioniert auf Windows, Linux und macOS.
+Dieses Skript zeigt regelmäßig eine Benachrichtigung an, um dich ans Trinken zu erinnern. Es funktioniert auf Windows aber mit ein paar kleinen Änderungen auch auf Linux und macOS.
 
 Funktionen
 
