@@ -1,7 +1,9 @@
+# Importiere die benötigte Bibliothek für Desktop-Benachrichtigungen
 # für Linus, macOS und Android - from plyer import notification
-from win10toast import ToastNotifier    # Windows
+from win10toast import ToastNotifier    # für Windows
 import time, random, sys
 
+# Definiere eine Liste mit verschiedenen Erinnerungsnachrichten 
 toasts = ["Trinken oder welken - du entscheidest!",
                  "Deine Pflanzen wollen, dass du auch mal trinkst!",
                  "Mehr Wasser, weniger Sorgen!",
@@ -21,16 +23,20 @@ toasts = ["Trinken oder welken - du entscheidest!",
                  "Wasser ist quasi flüssige Produktivität. Gönn dir!",
                  "Hydration ist wie ein Schutzschild gegen miese Laune!",
                  "Deine Nieren haben mir geschrieben: Sie wollen mehr Wasser!"]
-                
-def drink_notification():
-    toaster = ToastNotifier()
-    toaster.show_toast(
-        "Drink Reminder",
-        random.choice(toasts),
-        duration=30,
-        icon_path= r"C:\Users\Admin\Documents\Zara\Python Projects\Trink-Erinnerung\icon_tropfen_1F4_icon.ico",
-        threaded=True
-        )
 
+# Funktion, die eine Trink-Erinnerung als Desktop-Benachrichtigung anzeigt                
+def drink_notification():
+    # Erstelle ein ToastNotifier-Objekt für Windows-Benachrichtigungen
+    toaster = ToastNotifier()
+    # Zeige eine Benachrichtigung mit zufälliger Nachricht aus der Liste
+    toaster.show_toast(
+        "Drink Reminder",       # Titel der Benachrichtigung
+        random.choice(toasts),  # Zufällige Erinnerung aus der Liste auswählen
+        duration=30,            # Dauer der Benachrichtigung (in Sekunden)
+        icon_path= r"C:\Users\Admin\Documents\Zara\Python Projects\Trink-Erinnerung\icon_tropfen_1F4_icon.ico", # Pfad zum Icon
+        threaded=True           # Threaded=True sorgt dafür, dass die Benachrichtigung nicht das Hauptprogramm blockiert
+        )
+    
+# Falls dieses Skript direkt ausgeführt wird, rufe die drink_notification-Funktion auf
 if __name__ == "__main__":
     drink_notification()
