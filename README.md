@@ -62,8 +62,4 @@ Die Nachrichten kannst du im toasts-Array im Skript ändern oder erweitern.
 
 Falls du ein eigenes Symbol möchtest, ersetze icon_path in win10toast durch den Pfad zu deiner .ico-Datei.
 
-<<<<<<< HEAD
 Viel Spaß und bleib hydriert! 💧
-=======
-Viel Spaß und bleib hydriert! 💧
->>>>>>> ccdd72760f8cb01fd32e6d2c1e9e4daa3927ce99
